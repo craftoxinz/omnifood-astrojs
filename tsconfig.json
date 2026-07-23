@@ -1,5 +1,13 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "ignoreDeprecations": "6.0"
+    },
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"]
 }
