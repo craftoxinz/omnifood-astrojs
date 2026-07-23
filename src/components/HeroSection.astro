@@ -1,0 +1,39 @@
+---
+import { Picture } from 'astro:assets';
+import heroImg from '@/assets/hero.png';
+---
+
+<section class="bg-primary pt-5 pb-13 sm:pt-9.5 sm:pb-19">
+    <div class="grid gap-13 px-6 sm:px-16">
+        <div class="text-center">
+            <h1 class="mb-6 text-4xl font-bold text-primary-foreground">
+                A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="mb-9 text-base text-foreground">
+                The smart 365-days-per-year food subscription that will make you
+                eat healthy again. Tailored to your personal tastes and
+                nutritional needs.
+            </p>
+            <a
+                href="#"
+                class="me-3 inline-block rounded-lg bg-accent px-3 py-4 font-semibold text-accent-foreground hover:bg-accent-hover"
+            >
+                Start eating well
+            </a>
+            <a
+                href="#"
+                class="inline-block rounded-lg bg-accent-foreground px-3 py-4 font-semibold text-primary-foreground"
+            >
+                Learn more
+            </a>
+        </div>
+        <div class="text-center">
+            <Picture
+                src={heroImg}
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                formats={['avif', 'webp']}
+                class="mx-auto block w-5/6 sm:w-2/3"
+            />
+        </div>
+    </div>
+</section>

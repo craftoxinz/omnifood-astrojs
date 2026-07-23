@@ -5,4 +5,20 @@
         var(--font-rubik), ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-foreground: var(--foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent-hover: var(--accent-hover);
+}
+
+:root {
+    --primary: oklch(0.97 0.02 61.86);
+    --primary-foreground: oklch(0.32 0 0);
+    --foreground: oklch(0.45 0 0);
+    --accent: oklch(0.7 0.16 55.54);
+    --accent-foreground: oklch(1 0 0);
+    --accent-hover: oklch(0.64 0.15 55.4);
 }
